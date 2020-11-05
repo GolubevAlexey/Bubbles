@@ -28,6 +28,7 @@ class Bubbles<T extends List> {
 		}
 		
 		Bubbles v = new Bubbles(list, new Comparison<Integer>() {
+			//сортирует только в одну сторону, поэтому boolean
 			public boolean compare(Integer t1, Integer t2) {
 				if(t1 > t2) 
 					return true;
